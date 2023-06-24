@@ -1,0 +1,7 @@
+<form method="post" action="{% url 'home' %}">
+    {% csrf_token %}
+    <label for="symptoms">Enter your symptoms (separated by commas):</label>
+    <input type="text" id="symptoms" name="symptoms">
+    <br>
+    <input type="submit" value="Submit">
+</form>
