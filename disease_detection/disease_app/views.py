@@ -1,6 +1,10 @@
-from django.shortcuts import render
+
 from .models import Disease
 from difflib import SequenceMatcher
+from django.shortcuts import render
+from django.shortcuts import render
+
+
 
 def home(request):
     if request.method == 'POST':

@@ -14,6 +14,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+import os
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,6 +27,9 @@ SECRET_KEY = "django-insecure-l#2#kzknl7iv@#x&+g)*2=g#t-+d@#uu=p!m&k$kcz=@@4b8ld
 DEBUG = True
 
 ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = ['https://surya810-congenial-cod-945vjg6jxh7q4g-8000.preview.app.github.dev']
+
+
 
 
 # Application definition
@@ -54,7 +58,7 @@ ROOT_URLCONF = "disease_detection.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -79,6 +83,7 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
 
 
 # Password validation
