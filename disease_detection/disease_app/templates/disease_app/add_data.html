@@ -1,0 +1,18 @@
+<h2>Add New Disease Data</h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="name">Disease Name:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="symptoms">Symptoms (separated by commas):</label>
+    <input type="text" id="symptoms" name="symptoms">
+    <br>
+    <label for="medicines">Medicines (separated by commas):</label>
+    <input type="text" id="medicines" name="medicines">
+    <br>
+    <input type="submit" value="Add">
+</form>
+
+{% if success %}
+<p>Data added successfully!</p>
+{% endif %}

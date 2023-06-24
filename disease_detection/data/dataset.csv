@@ -1,0 +1,28 @@
+﻿Diseases,Symptoms,Medicines
+Common Cold,"cough, sore throat, runny nose ","acetaminophen, ibuprofen "
+Influenza ,"fever, headache, body aches, cough ","oseltamivir, acetaminophen "
+Migraine ,"severe headache, sensitivity to light, nausea","sumatriptan, ibuprofen "
+Allergies ,"sneezing, itchy eyes, runny nose, cough","antihistamines, nasal sprays "
+Asthma ,"shortness of breath, wheezing, cough","bronchodilators, inhaled corticosteroids"
+Bronchitis ," persistent cough, chest congestion, fatigue","antibiotics, cough suppressants "
+Pneumonia ,"fever, chills, cough with phlegm, chest pain","antibiotics, expectorants "
+Gastritis ,"abdominal pain, bloating, nausea, vomiting","antacids, proton pump inhibitors "
+Gastroenteritis ,"diarrhea, vomiting, stomach cramps ","oral rehydration solutions, antiemetics "
+Hepatitis ,"jaundice, fatigue, abdominal pain, dark urine ","antiviral medications, liver protectants "
+Hypertension ,"high blood pressure, headaches, dizziness","diuretics, ACE inhibitors "
+Diabetes,"frequent urination, increased thirst, fatigue","insulin, oral antidiabetic drugs"
+Hypothyroidism ,"fatigue, weight gain, cold intolerance",levothyroxine sodium
+Hyperthyroidism,"weight loss, rapid heartbeat, irritability","beta blockers, antithyroid medications"
+Osteoarthritis,"joint pain, stiffness, limited mobility ","analgesics, nonsteroidal anti-inflammatory drugs"
+Rheumatoid Arthritis,"joint swelling, morning stiffness, fatigue","disease-modifying antirheumatic drugs, corticosteroids"
+Malaria ,"fever, chills, headache, muscle pain",antimalarial drugs 
+Dengue Fever,"high fever, severe headache, joint pain","analgesics, fluid replacement therapy"
+Cholera ,"watery diarrhea, vomiting, dehydration ","oral rehydration solutions, antibiotics "
+Urinary Tract Infection,"frequent urination, pain or burning sensation while urinating","antibiotics, urinary analgesics"
+Kidney Stones ,"severe abdominal or back pain, blood in urine","pain relievers, alpha-blockers "
+Appendicitis ,"abdominal pain, loss of appetite, nausea",appendectomy (surgical removal of appendix)
+Gout ,"joint pain (usually in big toe), inflammation, redness ","nonsteroidal anti-inflammatory drugs, colchicine"
+Osteoporosis ,"bone pain, fractures, loss of height","calcium and vitamin D supplements, bisphosphonates"
+Anemia ,"fatigue, weakness, pale skin ","iron supplements, vitamin B12 injections "
+Pneumothorax,"sudden chest pain, difficulty breathing, cyanosis","chest tube insertion, oxygen therapy"
+Pancreatitis,"abdominal pain (upper left or middle), nausea ","fasting, pain management, intravenous fluids "

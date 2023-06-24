@@ -1,0 +1,16 @@
+<h2>Import Data from Excel</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="excel_file">Excel File:</label>
+    <input type="file" id="excel_file" name="excel_file">
+    <br>
+    <input type="submit" value="Import">
+</form>
+
+{% if success %}
+<p>Data imported successfully!</p>
+{% endif %}
+
+{% if error %}
+<p>Error: {{ error }}</p>
+{% endif %}

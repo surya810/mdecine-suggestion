@@ -30,3 +30,39 @@ def home(request):
 
     return render(request, 'disease_app/home.html')
 
+def add_data(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        symptoms = request.POST.get('symptoms')
+        medicines = request.POST.get('medicines')
+
+        disease = Disease(name=name, symptoms=symptoms, medicines=medicines)
+        disease.save()
+
+        return render(request, 'disease_app/add_data.html', {'success': True})
+
+    return render(request, 'disease_app/add_data.html', {'success': False})
+
+import csv
+import pandas as pd
+
+def import_data(request):
+    if request.method == 'POST':
+        csv_file = request.FILES['csv_file']
+
+        if csv_file.name.endswith('.csv'):
+            df = pd.read_csv(csv_file)
+
+            for _, row in df.iterrows():
+                name = row['Disease']
+                symptoms = row['Symptoms']
+                medicines = row['Medicines']
+
+                disease = Disease(name=name, symptoms=symptoms, medicines=medicines)
+                disease.save()
+
+            return render(request, 'disease_app/import_data.html', {'success': True})
+        else:
+            return render(request, 'disease_app/import_data.html', {'success': False, 'error': 'Invalid file format. Only .csv files are supported.'})
+
+    return render(request, 'disease_app/import_data.html', {'success': False})
